@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Stylesheet/style.css">
+    <link rel="stylesheet" href="Stylesheet/general.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+		/>
+</head>
+<body>
+    <nav onmouseleave="hideCard()">
+        <div class="logo">
+            tCash
+            <i class="bi bi-list" onclick="showNavLinks()"></i>
+        </div>
+        
+        <div class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="faq.html">FAQs</a>
+            <a href="" onmouseover="showCard()">Help</a>
+                <div class="help-menu">
+                    <div class="wrap">
+                        <div onclick="contactPage()">
+                            <h3><a href="contact.html">Contact Us</a></h3>
+                            <p>Contact us with any questions you may have.</p>
+                        </div>
+                        <div onclick = "reportPage()">
+                            <h3><a href="report.html">Report Account</a></h3>
+                            <p>Report any suspicious activity on your account</p>
+                        </div>
+                    </div>
+                </div>
+            <div class="nav-links-account">
+                <a href="signUpPage.html">Sign Up</a>
+                <a href="signIn.html">Sign In</a>
+            </div>
+        </div>
+        
+        <div class="account">
+            <a href="signUpPage.html">Sign Up</a>
+            <a href="signIn.html">Sign In</a>
+        </div>
+        
+        <div class="help-card" id="help-card" style="display: none;" onmouseleave="hideCard()" onmouseover="showCard()">
+            <div class="wrap">
+                <div onclick="contactPage()">
+                    <h3><a href="contact.html">Contact Us</a></h3>
+                    <p>Contact us with any questions you may have.</p>
+                </div>
+                <div onclick="reportPage()">
+                    <h3><a href="report.html">Report Account</a></h3>
+                    <p>Report any suspicious activity on your account</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="hero-sec">
+        <img src="Images/Ellipse 1.svg" alt="" class="circle">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Get <span>Instant Loans</span> made easier with tCash</h1>
+                <p>With tCash, all your financial needs are solved in few seconds with instant loans ranging from $50 to $1000.</p>
+                <button>Get Started</button>
+            </div>
+            <img src="Images/E-Wallet-rafiki.svg" alt="">
+        </div>
+        <img src="Images/Ellipse 2.svg" alt="" id="curve">
+    </div>
+
+
+
+    <div class="works">
+        <div class="step-mbx-up">
+            <img src="Images/boxes.png" alt="">
+        </div>
+
+        <div class="step-mbx-down" id="smbx2">
+            <img src="Images/smallCircles2.svg" alt="">
+        </div>
+
+        <div class="steps">
+            <div class="steps-head">
+                <h1>How it works</h1>
+                <p>Follow these three simple steps to get started with tCash</p>
+            </div>
+
+            <div class="steps-box">
+                <div class="steps-text">
+                    <div class="box">
+                        <div class="num">1</div>
+                        <h3>Create Account</h3>
+                        <p>Register yourself as a tCash application user.</p>
+                    </div>
+                    <img src="Images/lines.png" alt="">
+                    <div class="box">
+                        <div class="num">2</div>
+                        <h3>Verify your Bank Details</h3>
+                        <p>Verify your bank details and secure your account.</p>
+                    </div>
+                    <img src="Images/lines.png" alt="">
+                    <div class="box">
+                        <div class="num">3</div>
+                        <h3>Apply for loan</h3>
+                        <p>Apply for a loan with us and get instantly paid</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="fact">
+        <img src="Images/Wallet-pana.svg" alt="">
+        <div class="fact-text">
+            <div class="innertxt">
+                <h1>Invest in our tSave account and get a 15% interest per annum</h1>
+                <p>Our tSave account is highly secured, lock your funds for a certain period to avoid unecessary spending.</p>
+            </div>
+            <button class="factbtn">Get Started</button>
+        </div>
+    </div>
+
+
+    <section class="features">
+        <div class="features-wrapper">
+            <div class="features-head">
+                <h1>Features We Offer</h1>
+                <p>We offer various services for our customers all aiming towards solving your financial issues.</p>
+            </div>
+            <div class="card">
+                <i class="bi bi-cash-coin"></i>
+                <div class="card-info">
+                    <h3>Get Loan</h3>
+                    <p>Get loan easily and pay on time to get access to higher loan amounts.</p>
+                </div>
+            </div>
+            <div class="card">
+                <i class="bi bi-piggy-bank"></i>
+                <div class="card-info">
+                    <h3>Invest</h3>
+                    <p>Invest for a certain period of time and earn 15% ROI</p>
+                </div>
+            </div>
+            <div class="card">
+                <i class="bi bi-shield-lock"></i>
+                <div class="card-info">
+                    <h3>tCash Save</h3>
+                    <p>Lock your money towards a specific goal</p>
+                </div>
+            </div>
+            <div class="card">
+                <i class="bi bi-lightbulb"></i>
+                <div class="card-info">
+                    <h3>Pay Utilities</h3>
+                    <p>Pay for Utilities like dstv, phcn, e.t.c from the comfort of your home.</p>
+                </div>
+            </div>
+            <div class="card">
+                <i class="bi bi-phone"></i>
+                <div class="card-info">
+                    <h3>Recharge</h3>
+                    <p>Recharge your line at any time of the day easy and fast.</p>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+
+
+    <section class = "swiperClass">
+        <div class="swiper mySwiper">
+            <h1>Hear from Our Customers</h1>
+            <div class="swiper-wrapper" id="swiper-wrapper">
+                <!-- SWIPE FIRST SECTION -->
+                <!-- swiper slide 1 -->
+                <div class="swiper-slide">
+                    <div class="swiper-slide--img">
+                        <img src="images/testimonal.svg" alt="" />
+                    </div>
+                    <div class="slide-txt">
+                        <p
+                            >Taking loans from tCash was one of the best things i ever did.
+                            from their instant payments, to their tSave, what else could i
+                            ask for? tCash!!!</p
+                        >
+                        <p>Sophia</p>
+                    </div>
+                </div>
+                <!-- swiper slide 2 -->
+                <div class="swiper-slide">
+                    <div class="swiper-slide--img">
+                        <img src="images/testimonal.svg" alt="" />
+                    </div>
+                    <div class="slide-txt">
+                        <p
+                            >Taking loans from tCash was one of the best things i ever did.
+                            from their instant payments, to their tSave, what else could i
+                            ask for? tCash!!!</p
+                        >
+                        <p>Sophia</p>
+                    </div>
+                </div>
+                <!-- swiper slide 3 -->
+                <div class="swiper-slide">
+                    <div class="swiper-slide--img">
+                        <img src="images/testimonal.svg" alt="" />
+                    </div>
+                    <div class="slide-txt">
+                        <p
+                            >Taking loans from tCash was one of the best things i ever did.
+                            from their instant payments, to their tSave, what else could i
+                            ask for? tCash!!!</p
+                        >
+                        <p>Sophia</p>
+                    </div>
+                </div>
+                <!-- swiper slide 4 -->
+                <div class="swiper-slide">
+                    <div class="swiper-slide--img">
+                        <img src="images/testimonal.svg" alt="" />
+                    </div>
+                    <div class="slide-txt">
+                        <p
+                            >Taking loans from tCash was one of the best things i ever did.
+                            from their instant payments, to their tSave, what else could i
+                            ask for? tCash!!!</p
+                        >
+                        <p>Sophia</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+        </div>
+    </section>
+
+
+
+
+
+
+    <div class="subscribe">
+        <div class="left-subscribe">
+            <h1>Subscribe to our Newsletter</h1>
+            <input type="text" placeholder="Email Address">
+            <button>Submit</button>
+        </div>
+        <div class="right-subscribe">
+            <img src="Images/Subscriber-pana.svg" alt="">
+        </div>
+    </div>
+
+
+
+
+
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-text">
+                <h5>tcash</h5>
+                <p>tcash makes your financial needs better with low interests and ease of transactions.</p>
+                <div class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Facebook_icon_2013.svg/640px-Facebook_icon_2013.svg.png" alt="">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="">
+                </div>
+            </div>
+            <div class="footer-links">
+                <h5>QUICK LINKS</h5>
+                <a href="index.html">Home</a>
+                <a href="">About</a>
+                <a href="faq.html">FAQs</a>
+                <a href="">Report account</a>
+                <a href="">Contact Us</a>
+            </div>
+            <div class="footer-links">
+                <h5>OFFICES</h5>
+                <p>+2348104009853</p>
+                <p>tCash@gmail.com</p>
+                <p>Aptech PH besides Shell I.A</p>
+            </div>
+            <div class="footer-links">
+                <h5>COMPANY</h5>
+                <p>Terms of Services</p>
+                <p>Privacy Policy</p>
+                <p>Help Center</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Made with love. tCash</p>
+        </div>
+    </footer>
+
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        function showCard(){
+            document.getElementById("help-card").style.display = "flex"
+        }
+        function hideCard(){
+            document.getElementById("help-card").style.display = "none"
+        }
+        function showNavLinks(){
+            let nav = document.getElementById("nav-links")
+            nav.classList.toggle("actives")
+        }
+        function contactPage(){
+            window.location.replace("contact.html")
+        }
+        function reportPage(){
+            window.location.replace("report.html")
+        }
+
+        const swiper = new Swiper(".mySwiper", {
+				loop: true,
+				slidesPerView: 1,
+				spaceBetween: 30,
+				pagination: {
+					el: ".swiper-pagination",
+				},
+                breakpoints: {
+                    // when window width is <= 499px
+                    800: {
+                        slidesPerView: 2
+                        // spaceBetweenSlides: 50
+                    },
+                    560: {
+                        slidesPerView: 1.5
+                    }
+                }
+			});
+    </script>
+
+</body>
+</html>

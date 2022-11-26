@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Stylesheet/general.css">
+    <link rel="stylesheet" href="Stylesheet/faq.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>FAQ Page</title>
+
+</head>
+<body>
+    <nav onmouseleave="hideCard()">
+        <div class="logo">
+            tCash
+            <i class="bi bi-list" onclick="showNavLinks()"></i>
+        </div>
+        
+        <div class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="faq.html" class="active">FAQs</a>
+            <a href="" onmouseover="showCard()">Help</a>
+                <div class="help-menu">
+                    <div class="wrap">
+                        <div onclick="contactPage()">
+                            <h3><a href="contact.html">Contact Us</a></h3>
+                            <p>Contact us with any questions you may have.</p>
+                        </div>
+                        <div onclick="reportPage()">
+                            <h3><a href="contact.html">Report Account</a></h3>
+                            <p>Report any suspicious activity on your account</p>
+                        </div>
+                    </div>
+                </div>
+            <div class="nav-links-account">
+                <a href="signUpPage.html">Sign Up</a>
+                <a href="signIn.html">Sign In</a>
+            </div>
+        </div>
+        
+        <div class="account">
+            <a href="signUpPage.html">Sign Up</a>
+            <a href="signIn.html">Sign In</a>
+        </div>
+        
+        <div class="help-card" id="help-card" style="display: none;" onmouseleave="hideCard()" onmouseover="showCard()">
+            <div class="wrap">
+                <div onclick="contactPage()">
+                    <h3><a href="contact.html">Contact Us</a></h3>
+                    <p>Contact us with any questions you may have.</p>
+                </div>
+                <div onclick="reportPage()">
+                    <h3><a href="report.html">Report Account</a></h3>
+                    <p>Report any suspicious activity on your account</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="heading">
+        <h1>Frequently asked questions</h1>
+        <span>Have questions? We're here to help</span>
+        <div class="input">
+            <div class="icon">
+                <i class="bi bi-search"></i>
+            </div>
+            <input type="text" placeholder="search...">
+        </div>
+    </div>
+
+    <div class="questionSec_con">
+        <div class="questionSec">
+            <div class="questionBox">
+                <div class="question">
+                    <div class="title">
+                        <h3>Is there a free trial avaliable?</h3>
+                    </div>
+                    <div class="subTitle">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quasi hic fugit itaque eaque ratione minus magni ducimus nostrum delectus! 
+                    </div>
+                </div>
+                <div class="icon"><i class="bi bi-plus-circle"></i></div>
+            </div>
+            <div class="questionBox">
+                <div class="question">
+                    <div class="title"><h3>Can I change my plan later?</h3></div>
+                    <div class="subTitle">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe eum doloremque, animi numquam libero, cumque repellat distinctio, excepturi molestias facilis consequuntur eligendi suscipit.
+                    </div>
+                </div>
+                <div class="icon">
+                    <i class="bi bi-plus-circle"></i>
+                    <i class="bi bi-dash-circle" ></i>
+                </div>
+            </div>
+            <div class="questionBox">
+                <div class="question">
+                    <div class="title"><h3>Is there a free trial avaliable?</h3></div>
+                    <div class="subTitle">
+                    </div>
+                </div>
+                <div class="icon"><i class="bi bi-plus-circle"></i></div>
+            </div>
+            <div class="questionBox">
+                <div class="question">
+                    <div class="title"><h3>Is there a free trial avaliable?</h3></div>
+                    <div class="subTitle">
+                    </div>
+                </div>
+                <div class="icon"><i class="bi bi-plus-circle"></i></div>
+            </div>
+
+            <div class="questionBox">
+                <div class="question">
+                    <div class="title"><h3>Is there a free trial avaliable?</h3></div>
+                    <div class="subTitle">
+                    </div>
+                </div>
+                <div class="icon"><i class="bi bi-plus-circle"></i></div>
+            </div>
+
+            <div class="questionBox">
+                <div class="question">
+                    <div class="title"><h3>Is there a free trial avaliable?</h3></div>
+                    <div class="subTitle">
+                    </div>
+                </div>
+                <div class="icon"><i class="bi bi-plus-circle"></i></div>
+            </div>
+            <div class="questionBox">
+                <div class="question">
+                    <div class="title"><h3>Is there a free trial avaliable?</h3></div>
+                    <div class="subTitle">
+                    </div>
+                </div>
+                <div class="icon"><i class="bi bi-plus-circle"></i></div>
+            </div>
+
+        </div>
+       
+    </div>
+
+    <div class="lastSec">
+        <img src="Images/Yes or no-amico (5).svg" alt="">
+        <div class="wrap">
+            <h3>Still have questions?</h3>
+            <span>Can't find the answer you're looking for? Please chat to our friendly forum</span>   
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-text">
+                <h5>tcash</h5>
+                <p>tcash makes your financial needs better with low interests and ease of transactions.</p>
+                <div class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Facebook_icon_2013.svg/640px-Facebook_icon_2013.svg.png" alt="">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="">
+                </div>
+            </div>
+            <div class="footer-links">
+                <h5>QUICK LINKS</h5>
+                <a href="index.html">Home</a>
+                <a href="">About</a>
+                <a href="faq.html">FAQs</a>
+                <a href="">Report account</a>
+                <a href="">Contact Us</a>
+            </div>
+            <div class="footer-links">
+                <h5>OFFICES</h5>
+                <p>+2348104009853</p>
+                <p>tCash@gmail.com</p>
+                <p>Aptech PH besides Shell I.A</p>
+            </div>
+            <div class="footer-links">
+                <h5>COMPANY</h5>
+                <p>Terms of Services</p>
+                <p>Privacy Policy</p>
+                <p>Help Center</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Made with love. tCash</p>
+        </div>
+    </footer>
+
+
+    <script>
+        function showCard(){
+            document.getElementById("help-card").style.display = "flex"
+        }
+        function hideCard(){
+            document.getElementById("help-card").style.display = "none"
+        }
+        function showNavLinks(){
+            let nav = document.getElementById("nav-links")
+            nav.classList.toggle("actives")
+        }
+        function contactPage(){
+            window.location.replace("contact.html")
+        }
+        function reportPage(){
+            window.location.replace("report.html")
+        }
+        
+
+        var faq = document.getElementsByClassName("title");
+        var icon = document.getElementsByClassName("bi")
+        for(i = 0; i < faq.length; i++){
+            faq[i].addEventListener("click", function(){
+                // icon.classList.toggle("actives")
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                    
+                } else {
+                    content.style.display = "block";
+                }
+            })
+        }
+        </script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(245,245,245);
+    align-items: center;
+    height: 100vh;
+}
+.form{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+}
+form{
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    width: 60%;
+    height: 90%;
+}
+.line{
+    width: 50px;
+    height: 5px;
+    background-color: rgb(103, 115, 229);
+
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+.inputCon{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+
+}
+label{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.input{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    display: flex;
+    height: 40px;
+    width: 400px;
+    border-radius: 10px;
+    padding: 0px 8px;
+    box-shadow: 0px 0px 20px rgba(199, 199, 199, 0.25);;
+}
+input{
+    width: 90%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.bi{
+    color: gray;
+    font-size: 15px;
+}
+input::placeholder{
+    font-size: 13px;
+    font-weight: 500;
+}
+.icon{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+.imgSec{
+    width: 50%;
+    height: 100vh;
+    background-color: rgb(103, 115, 229);
+    /* border-radius: 0px 0px 0px 1000px ; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgSec img{
+    width: 350px;
+    height: 560px;
+}
+
+.terms{
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+}
+.terms input{
+    width: 20px;
+}
+.terms span{
+    font-size: 14px;
+    color: rgb(34, 34, 34);
+}
+button{
+    height: 40px;
+    background-color: rgb(103, 115, 229);
+    outline: none;
+    border: none;
+    color: whitesmoke;
+    font-size: 17px;
+    cursor: pointer;
+    width: 400px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.logInLink{
+    text-align: center;
+    font-weight: 500;
+    color: gray;
+    font-size: 14px;
+}
+.logInLink a{
+    text-decoration: none;
+    color: rgb(103, 115, 229);
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 10px;
+    font-size: 20px;
+    font-weight: 800;
+}
+.buttons p{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.googleBtn{
+    background-color:  #EDECEC;
+    color: black;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 14px;
+    justify-content: center;
+}
+.googleBtn img{
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+}
+.imgSec img{
+    width: 450px;
+    object-fit: cover;
+}
+@media screen and (max-width: 1000px){
+    .imgSec{
+        display: none;
+    }
+    body{
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0px;
+    }
+    .form{
+        width: 500px;
+        /* height: 90vh; */
+        border-radius: 10px;
+        box-shadow: 2px 2px 20px rgba(219, 219, 219, 0.548);
+        border: 1px solid rgb(221, 221, 221);
+        padding: 40px 0px;
+
+    }
+    form{
+
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .input{
+        width: 350px;
+    }
+
+
+    button{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .form{
+        width: 90%;
+
+    }
+    form{
+        width: 100%;
+
+    }
+    .input{
+    width: 100%;
+    }
+    .inputs{
+        /* background-color: firebrick; */
+        width: 90%;
+    }
+    .inputCon{
+        width: 100%;
+    }
+    .buttons{
+        width: 100%;
+    }
+    button{
+        width: 100%;
+    }
+}
