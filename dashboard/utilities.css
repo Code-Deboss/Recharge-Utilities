@@ -22,11 +22,7 @@ body {
   position: relative;
 	/* background 	-color: aqua; */
 }
-.hero-right#blur.active{
-	filter: blur(10px);
-	pointer-events: none;
-	user-select: none;
-}
+
 
 .header {
 	display: flex;
@@ -179,15 +175,12 @@ cursor: pointer;
 	font-weight: 500;
 	font-size: 20px;
 }
-.modal.active{
-	visibility: visible;
-	/* opacity: 0; */
-}
+
 .add-wrapper{
 	width: 50ch;
 	background-color: white;
 	height: 16%;
-	display: flex;
+	display: none;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
@@ -201,12 +194,13 @@ cursor: pointer;
 	box-shadow: 0 5px 30px rgb(0,0,0,.30);
 	background: #fff;
 	
+	
 }
 .modalII{
 	height: 30rem;
 	width: 50ch;
 	border: 0;
-	display: flex;
+	display: none;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
@@ -216,7 +210,7 @@ cursor: pointer;
 	position: fixed;
 	top: 30%;
 	left:45%;
-	visibility: hidden;
+	/* visibility: hidden; */
 }
 
 .add-wrapper div{
@@ -236,7 +230,7 @@ cursor: pointer;
 }
 #closeII{
 	position: absolute;
-	bottom: 105px;
+	bottom: 420px;
 	left: 410px;
 	height: 25px;
 	width: 25px;
@@ -269,6 +263,11 @@ cursor: pointer;
 	margin-top: 10px;
 	padding-left: 10px;
 	font-size: 18px;
+}
+.modalII h1{
+	width: 75%;
+	font-weight: 500;
+	font-size: 23px;
 }
 .add-wrapper h1{
 	width: 75%;
@@ -314,6 +313,17 @@ cursor: pointer;
 		width: 20%;
 		height: 150px;
 	}
+	.add-wrapper{
+		height: 20%;
+		position: fixed;
+		top: 43%;
+		left: 35%;
+	}
+	.modalII{
+		position: fixed;
+		top: 30%;
+		left: 35%;
+	}
 }
 @media screen and (max-width: 768px){
 	.sub-utilitiesII div h1{
@@ -326,9 +336,159 @@ cursor: pointer;
 	.sub-utilitiesII div img{
 		height: 60px;
 	}
+	.add-wrapper{
+		position: fixed;
+		top: 43%;
+		left: 25%;
+	}
+	.modalII{
+		position: fixed;
+		top: 30%;
+		left: 25%;
+	}
 
 }
-
+@media screen and (max-width: 425px){
+	.sub-utilitiesII div{
+		width: 20%;
+		height: 90px;
+	}
+	.sub-utilitiesII div img{
+		height: 50px;
+	}
+	.sub-utilitiesII{
+		height: 100px;
+		width: 90%;
+		/* background-color: #000; */
+	}
+	.utilitiesII{
+		height: 200px;
+		/* background-color: antiquewhite; */
+		margin-top: 50px;
+	}
+	.add-wrapper{
+		position: fixed;
+		top: 43%;
+		width: 40ch;
+		left: 7%;
+	}
+	.modalII{
+		position: fixed;
+		top: 30%;
+		width: 40ch;
+		left: 7%;
+	}
+	#closeII{
+		position: absolute;
+		bottom: 435px;
+		left: 325px;
+		height: 25px;
+		width: 25px;
+	}
+	.add-wrapper div{
+		position: absolute;
+		bottom: 145px;
+		left: 325px;
+	}
+}	
+@media screen and (max-width: 375px){
+	.sub-utilitiesII div{
+		width: 50%;
+		height: 15%;
+	}
+	.sub-utilitiesII div img{
+		height: 100px;
+	}
+	.sub-utilitiesII{
+		height: 60rem;
+		width: 90%;
+		background-color: #000;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+	.utilitiesII{
+		height: 60rem;
+		background-color: antiquewhite;
+		margin-top: 50px;
+	}
+	.add-wrapper{
+		position: fixed;
+		top: 43%;
+		width: 38ch;
+		left: 3%;
+	}
+	.add-wrapper input{
+		width: 320px;
+	}
+	.add-wrapper h1{
+		margin-left: -20px;
+	}
+	.add-wrapper button{
+		width: 320px;
+	}
+	.modalII{
+		position: fixed;
+		top: 30%;
+		width: 38ch;
+		left: 3%;
+	}
+	.modalII button{
+		width: 320px;
+	}
+	.modalII input{
+		width: 320px;
+	}
+	#closeII{
+		position: absolute;
+		bottom: 435px;
+		left: 325px;
+		height: 25px;
+		width: 25px;
+	}
+	.add-wrapper div{
+		position: absolute;
+		bottom: 145px;
+		left: 325px;
+	}
+}
+@media screen and (max-width: 320px){
+	.add-wrapper{
+		position: fixed;
+		top: 43%;
+		width: 30ch;
+		left: 7%;
+		height: 250px;
+	}
+	.add-wrapper input{
+		width: 270px;
+	}
+	.add-wrapper h1{
+		margin-left: -20px;
+	}
+	.add-wrapper button{
+		width: 270px;
+	}
+	.modalII{
+		position: fixed;
+		top: 30%;
+		width: 30ch;
+		left: 7%;
+	}
+	.modalII button{
+		width: 250px;
+	}
+	.modalII input{
+		width: 250px;
+	}
+	#closeII{
+		position: absolute;
+		bottom: 430px;
+		left: 230px;
+		height: 25px;
+		width: 25px;
+	}
+	
+}
 /* END OF UTILITIES STYLES */
 
 

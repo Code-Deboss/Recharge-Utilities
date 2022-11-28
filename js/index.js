@@ -28,22 +28,18 @@ showCard.addEventListener("click", () => {
 // }
 function addUpcomingEventForm(){
     document.querySelector("#add-upcoming-event-form").style.display = "flex"
+    // document.querySelector("#modalII").style.display = "flex"
+    
+    
 }
 function closeUpcomingEventForm(){
     document.querySelector("#add-upcoming-event-form").style.display = "none"
-    document.querySelector("#edit-upcoming-event-form").style.display = "none"
+    document.querySelector("#modalII").style.display = "none"
+    
 
     location.reload()
 }
-function showinfo(x){
-    var element = document.getElementById("toggle");
-    element.classList.toggle("menushow");
-    var x = document.getElementById("switch2");
-    if (x.innerHTML === "keyboard_double_arrow_right") {
-      x.innerHTML = "keyboard_double_arrow_left";
-      x.style.color = "rgb(181, 181, 181)"
-    } else {
-      x.innerHTML = "keyboard_double_arrow_right";
-      x.style.color = "rgb(5, 0, 58)"
-    }
+function addModalII() {
+  document.querySelector("#modalII").style.display = "flex"
+  document.querySelector("#add-upcoming-event-form").style.display = "none"
 }
